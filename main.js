@@ -205,16 +205,16 @@ console.log( 'The total number of credit purchases is:', numCreditPurchases );
   - The assembled array should be made up of strings, not full `transaction` objects.
   - This array is allowed to contain duplicate values.
 */
-var uniqueVendors;
+var allVendors;
 
-console.log( 'The unique vendors are:', uniqueVendors );
+console.log( 'The vendors are:', allVendors );
 
 
 // --------------------------------------------------
 // QUESTION 06
 // --------------------------------------------------
 /*
-  Create an array that includes all of *unique* customers which appear in the transactions data set.
+  Create an array that includes all of the *unique* customers which appear in the transactions data set.
   eg. `[ 'customer one', 'customer two', ... ]
 
   HINT(S):
