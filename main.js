@@ -24,6 +24,7 @@ var transactions = [
     vendor: 'Dick\'s Doodads',
     items: [
       { name: 'XL Doodad', price: -3.00 },
+      { name: 'XS Doodad', price: -0.50 },
       { name: 'XS Doodad', price: -0.50 }
     ]
   },
