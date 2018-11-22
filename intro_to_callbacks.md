@@ -3,7 +3,7 @@ In JavaScript, functions are not invoked (or 'called') until they're appended wi
 
 1. A function can be invoked by adding a trailing set of parentheses:
 
-```
+```javascript
 function double( number ) {
     return number * 2;
 }
@@ -13,7 +13,7 @@ double( 5 ); // 10
 
 2. Alternatively, we can pass functions around within our program:
 
-```
+```javascript
 function double( number ) {
     return number * 2;
 }
@@ -29,7 +29,7 @@ This ability to pass function references around allows us to take advantage of a
 ## What Is A 'Callback'?
 Simply put, a 'callback' is a function that has been passed as an argument to another function. In our example above, we invoked `double()` and passed in the number `5`, making it available within the body of the function. However, what if we wanted `double()` to return the new number *and* log some information to the console? We could achieve this with just a few changes to our existing code.
 
-```
+```javascript
 function double( number, callback ) {
     // First we assign the new number to the `doubledNumber` var.
     var doubledNumber = number * 2;
@@ -80,7 +80,7 @@ Callbacks are a core aspect of synchronous programming, especially when it comes
 
 Say we're given an array, and we want to log each item to the console. We could achieve this like so:
 
-```
+```javascript
 var numbers = [ 0,1,2,4,5,6,7,8,9 ];
 
 for ( var i = 0; i < numbers.length; i++ ) {
@@ -98,7 +98,7 @@ This gives us the desired result, but it has a couple of downsides:
 
 When working with arrays, we have access to the **Iteration Methods**. One such method, `.forEach()`, gives us an alternative to the example above.
 
-```
+```javascript
 var numbers = [ 0,1,2,3,4,5,6,7,8,9 ];
 
 numbers.forEach( function( number ) {
@@ -113,7 +113,16 @@ numbers.forEach( function( number ) {
 
 In short, `.forEach()` allows us to focus on what we want to **do** with the items in our array (eg. by defining our callback function), rather than on how to access each item.
 
+Here is `.forEach()` being used again, but this time with an arrow function. Note that it's almost identical!
+
+```javascript
+var numbers = [ 0,1,2,3,4,5,6,7,8,9 ];
+
+numbers.forEach( ( number ) => {
+    console.log( 'The current number is', number );
+} );
+```
+
 Wait, it gets event better! We're not limited to *just* the `.forEach()` method. There are actually a variety of array **Iteration Methods**, and they all have a few things in common:
 - Each method is called *on* an array.
 - Each method accepts one argument: a 'callback' function.
-
