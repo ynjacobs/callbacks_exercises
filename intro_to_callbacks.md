@@ -18,7 +18,7 @@ function double( number ) {
     return number * 2;
 }
 
-var timesTwo = double;
+const timesTwo = double;
 
 double( 5 ); // 10
 timesTwo( 5 ); // 10
@@ -31,8 +31,8 @@ Simply put, a 'callback' is a function that has been passed as an argument to an
 
 ```javascript
 function double( number, callback ) {
-    // First we assign the new number to the `doubledNumber` var.
-    var doubledNumber = number * 2;
+    // First we assign the new number to the `doubledNumber` variable.
+    const doubledNumber = number * 2;
 
     // If the `callback` argument exists, we invoke it with `number` and `doubledNumber`.
     if ( callback ) {
@@ -81,9 +81,9 @@ Callbacks are a core aspect of synchronous programming, especially when it comes
 Say we're given an array, and we want to log each item to the console. We could achieve this like so:
 
 ```javascript
-var numbers = [ 0,1,2,4,5,6,7,8,9 ];
+const numbers = [ 0,1,2,4,5,6,7,8,9 ];
 
-for ( var i = 0; i < numbers.length; i++ ) {
+for ( let i = 0; i < numbers.length; i++ ) {
     console.log( 'The current number is ', numbers[ i ] );
 }
 ```
@@ -99,7 +99,7 @@ This gives us the desired result, but it has a couple of downsides:
 When working with arrays, we have access to the **Iteration Methods**. One such method, `.forEach()`, gives us an alternative to the example above.
 
 ```javascript
-var numbers = [ 0,1,2,3,4,5,6,7,8,9 ];
+const numbers = [ 0,1,2,3,4,5,6,7,8,9 ];
 
 numbers.forEach( function( number ) {
     console.log( 'The current number is', number );
@@ -116,7 +116,7 @@ In short, `.forEach()` allows us to focus on what we want to **do** with the ite
 Here is `.forEach()` being used again, but this time with an arrow function. Note that it's almost identical!
 
 ```javascript
-var numbers = [ 0,1,2,3,4,5,6,7,8,9 ];
+const numbers = [ 0,1,2,3,4,5,6,7,8,9 ];
 
 numbers.forEach( ( number ) => {
     console.log( 'The current number is', number );

@@ -1,4 +1,4 @@
-var transactions = [
+const transactions = [
   {
     type: 'sale',
     paymentMethod: 'cash',
@@ -116,7 +116,7 @@ var transactions = [
 /*
   Calculate the total number of transactions.
 */
-var totalTransactions = transactions.length;
+const totalTransactions = transactions.length;
 
 console.log( 'The total number of transactions is:', totalTransactions );
 
@@ -130,7 +130,7 @@ console.log( 'The total number of transactions is:', totalTransactions );
   HINT(S):
   - Not all transactions are 'sales'.
 */
-var numSales;
+const numSales;
 
 /*
   Hey, welcome to the first question!
@@ -160,7 +160,7 @@ console.log( 'The total number of sales is:', numSales );
 /*
   Calculate the total number of 'purchases'.
 */
-var numPurchases;
+const numPurchases;
 
 console.log( 'The total number of purchases is:', numPurchases );
 
@@ -174,7 +174,7 @@ console.log( 'The total number of purchases is:', numPurchases );
   HINT(S):
   - Don't forget that 'purchases' can also be made in 'cash'!
 */
-var numCashSales;
+const numCashSales;
 
 console.log( 'The total number of cash sales is:', numCashSales );
 
@@ -188,7 +188,7 @@ console.log( 'The total number of cash sales is:', numCashSales );
   HINT(S):
   - Make sure to exclude any 'sales' made by 'credit'!
 */
-var numCreditPurchases;
+const numCreditPurchases;
 
 console.log( 'The total number of credit purchases is:', numCreditPurchases );
 
@@ -205,7 +205,7 @@ console.log( 'The total number of credit purchases is:', numCreditPurchases );
   - The assembled array should be made up of strings, not full `transaction` objects.
   - This array is allowed to contain duplicate values.
 */
-var allVendors;
+const allVendors;
 
 console.log( 'The vendors are:', allVendors );
 
@@ -222,7 +222,7 @@ console.log( 'The vendors are:', allVendors );
   - The assembled array should be made up of strings, not full `transaction` objects.
   - Make sure that the resulting array *does not* include any duplicates.
 */
-var uniqueCustomers;
+const uniqueCustomers;
 
 console.log( 'The unique customers are:', uniqueCustomers );
 
@@ -240,7 +240,7 @@ console.log( 'The unique customers are:', uniqueCustomers );
   - There may be more than 1 'sale' that includes 5 or more items.
   - Individual transactions do not have either `name` or `numItems` properties, we'll have to add them to the output.
 */
-var bigSpenders;
+const bigSpenders;
 
 console.log( 'The "big spenders" are:', bigSpenders );
 
@@ -254,9 +254,9 @@ console.log( 'The "big spenders" are:', bigSpenders );
   HINT(S):
   - Transactions don't have 'prices', but their 'items' do!
 */
-var sumSales;
+const sumFirstSale;
 
-console.log( 'The sum of all sales is:', sumSales );
+console.log( 'The sum of the first sale items is:', sumFirstSale );
 
 
 // --------------------------------------------------
@@ -270,9 +270,9 @@ console.log( 'The sum of all sales is:', sumSales );
   - Make sure to include 'price' information from *all* purchases.
 */
 
-var sumPurchases;
+const sumPurchases;
 
-console.log( 'The sum of all purhcases is:', sumPurchases );
+console.log( 'The sum of all purchases is:', sumPurchases );
 
 
 // --------------------------------------------------
@@ -288,7 +288,7 @@ console.log( 'The sum of all purhcases is:', sumPurchases );
   HINT(S):
   - Unlike 'QUESTION 08' and 'QUESTION 09', here we're interested in both 'sale' and 'purchase' transactions.
 */
-var netProfit;
+const netProfit;
 
 console.log( 'The net profit is:', netProfit );
 
@@ -302,7 +302,7 @@ console.log( 'The net profit is:', netProfit );
   HINTS:
   - The result of this calculation should be a number (not an array, object, or other data type).
 */
-var mostItems;
+const mostItems;
 
 console.log( 'The most items sold in a single transaction is:', mostItems );
 
@@ -313,6 +313,6 @@ console.log( 'The most items sold in a single transaction is:', mostItems );
 /*
   Calculate the sum of the 'purchase' with the fewest items.
 */
-var sumOfSmallestPurchase;
+const sumOfSmallestPurchase;
 
 console.log( 'The sum of the smallest purchase is:', sumOfSmallestPurchase );
